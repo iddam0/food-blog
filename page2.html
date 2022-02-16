@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#button").click(function(){
+$("#p").toggle();
+});
+$("#button1").click(function(){
+$("#p1").toggle();
+});
+$("#button2").click(function(){
+$("#p2").toggle();
+});
+$("#button3").click(function(){
+$("#p3").toggle();
+});
+$("#button4").click(function(){
+$("#p4").toggle();
+});
+$("#button5").click(function(){
+$("#p5").toggle();
+});
+$("#button6").click(function(){
+$("#p6").toggle();
+});
+$("#button7").click(function(){
+$("#p7").toggle();
+});
+});
+</script>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body style="color:#590E8E">
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="https://blog.maddim2.repl.co" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href='https://blog.maddim2.repl.co'><img src="https://avatars.githubusercontent.com/u/97134139?v=4" alt="Image" class="w3-left w3-margin-right" style="width:60px; border-radius:50%; margin-left:2%;"></a></div>
+    <div class="w3-center w3-padding-16">Vegan Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://images.food52.com/Ny1KWu4eVUScuFV74bRJQ2_Yca4=/1200x1200/a890d2d5-459d-4352-917f-537ff2fc6922--2018-0309_abcv-whole-roasted-cauliflower_3x2_rocky-luten_025.jpg" alt="Cauliflower" style="width:70%; border-radius: 10%;">
+      <h3>Whole Roasted Cauliflower</h3>
+      <p>This a simple yet delicious vegan cauliflower recipe.</p> 
+     <p id="p" style="display: none";><a href="https://www.karissasvegankitchen.com/whole-roasted-cauliflower/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://cdn.theliveinkitchen.com/wp-content/uploads/2019/12/04105421/Sheet-Pan-Veggie-Tacos-The-Live-In-Kitchen-Featured.jpg" alt="Vegan Tacos" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Tacos for The Win!</h3>
+      <p>Tastes so good, you won't even know it's vegan!</p>
+      <p id="p1" style="display: none";><a href="https://lovingitvegan.com/vegan-tacos/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button1"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.delishknowledge.com/wp-content/uploads/15-Minute-Vegan-Pad-Thai-Noodles5-copy-1.jpg" alt="Pad Thai" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Pad Thai</h3>
+      <p>I love pad thai, and this is my favorite vegan recipe thus far.</p>
+      <p id="p2" style="display: none";><a href="https://www.noracooks.com/vegan-pad-thai/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button2"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://veganheaven.org/wp-content/uploads/2018/10/Vegan-Alfredo-Sauce-3.jpg" alt="Pasta and Wine" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Alfredo</h3>
+      <p>A great recipe for date night.</p>
+      <p id="p3" style="display: none";><a href="https://thevegan8.com/vegan-garlic-alfredo-sauce/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button3"><b>Click For Recipe»</b></button></p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://neuroticmommy.com/wp-content/uploads/2019/10/Vegan-Broccoli-Cheddar-Soup-FV.jpg" alt="Popsicle" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Broccoli Cheddar Soup</h3>
+      <p>I love that this recipe remakes this dish with no dairy.</p>
+      <p id="p4" style="display: none";><a href="https://neuroticmommy.com/2019/10/07/vegan-broccoli-cheddar-soup/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button4"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://peasandcrayons.com/wp-content/uploads/2020/07/vegan-mushroom-ramen-soup-recipe--500x500.jpg" alt="Broccoli Ramen" style="width:70%; border-radius: 10%;">
+      <h3>Broccoli Ramen</h3>
+      <p>I never thought about putting broccoli in ramen; I was missing out!</p>
+      <p id="p5" style="display: none";><a href="https://makeitdairyfree.com/easy-vegan-broccoli-and-pepper-ramen-noodles/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button5"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://shortgirltallorder.com/wp-content/uploads/2020/03/veggie-fried-rice-square-4-735x735.jpg" alt="Fried Rice" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Fried Rice</h3>
+      <p>If you love fried rice like me, give this a try!</p>
+      <p id="p6" style="display: none";><a href="https://minimalistbaker.com/easy-vegan-fried-rice/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button6"><b>Click For Recipe»</b></button></p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.acouplecooks.com/wp-content/uploads/2020/04/Vegan-Burritos-003s.jpg" alt="Burrito" style="width:70%; border-radius: 10%;">
+      <h3>Vegan Burrito</h3>
+      <p>Tastes just like Chipotle!</p>
+       <p id="p7" style="display: none";><a href="https://veganheaven.org/recipe/vegan-burrito/">Recipe</a></p>
+      <p><button class="w3-button w3-padding-large w3-white" id="button7"><b>Click For Recipe»</b></button></p>
+    </div>
+  </div>
+<!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="./index.html" class="w3-bar-item w3-button w3-hover-black">1</a>
+      <a href="./page2.html" class="w3-bar-item w3-black w3-button">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+
+
+
+
+
+
+
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
